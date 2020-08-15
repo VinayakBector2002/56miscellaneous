@@ -1,0 +1,17 @@
+"""31. WAP to return the length of the longest string
+in the list of strings str_list provided the list
+contains at least one element. """
+
+list = []
+while True:
+    k = input('Enter a string(Press 1 to exit) : ')
+
+    if k==' ' or k=='  ':
+        pass
+    if k=='1':
+        break
+    list.append(k)
+length = []
+for i in list:
+    length.append(len(i))
+print('Longest Character Length :', max(length))
