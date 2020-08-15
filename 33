@@ -1,0 +1,12 @@
+"""33. Write a program to accept a square integer
+matrix with odd dimensions (3*3, 5*5) and display
+the sum of middle row and column elements. """"
+
+val = 0
+m1 = []
+for i in range(3):
+    m1.append(eval(input()))
+for i in range(3):
+    val+=int(m1[1][i])
+for i in range(0,3,2):
+    val+=int(m1[i][1])
