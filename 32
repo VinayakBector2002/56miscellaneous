@@ -1,0 +1,19 @@
+"""32. WAP to display all the alternate elements from
+nested list H (starting from H[0][0])…… """
+
+print("Original List:")
+print()
+l=[]
+H = [[12,45,67],[33,90,76],[21,43,59]]
+for i in H:
+    for j in i:
+        print(j,end = "")
+    print()
+for i in range(len(H)):
+    if (i+1)%2!=0:
+        for j in range(0,len(H[i]),2):
+            l.append(H[i][j])
+    elif (i+1)%2==0:
+        l.append
+print()
+print('Required Output :',l)
